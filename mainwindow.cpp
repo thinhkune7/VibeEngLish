@@ -6,6 +6,7 @@
 #include<QDebug>
 #include<QMessageBox>
 #include<QCoreApplication>
+#include <QDirIterator>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -27,19 +28,43 @@ MainWindow::~MainWindow()
 void MainWindow:: docdulieutufile(){
     QString duongDan = QCoreApplication::applicationDirPath() + "/dictionary.txt";
     QFile file (duongDan);
-    if (!file.open(QIODevice::ReadOnly|QIODevice::Text)){
-        qDebug()<<"Lỗi không mở được file";
-        return;
+    if (file.open(QIODevice::ReadOnly|QIODevice::Text)){
+        v.clear();
+        QTextStream in(&file);
+        while (!in.atEnd()){
+            QString line=in.readLine();
+            QStringList tumoi=line.split(": ");
+            if(tumoi.size()==2)
+                v.push_back({tumoi[0].toStdString(),tumoi[1].toStdString()});
+        }
+        file.close();
+        qDebug()<<"Đã tải thành công "<<v.size()<<" từ vựng từ file dữ liệu người dùng vào ứng dụng";
     }
-    v.clear();
-    QTextStream in(&file);
-    while (!in.atEnd()){
-        QString line=in.readLine();
-        QStringList tumoi=line.split(": ");
-        v.push_back({tumoi[0].toStdString(),tumoi[1].toStdString()});
+    else {
+        qDebug() << "--- DANG SIEU AM RUOT APP ---";
+        QDirIterator it(":/", QDirIterator::Subdirectories);
+        while (it.hasNext()) {
+            qDebug() << "Toi thay file:" << it.next();
+        }
+        qDebug() << "-----------------------------";
+        QFile filegoc (":/dictionary_root.txt");
+        if (!filegoc.open(QIODevice::ReadOnly|QIODevice::Text)){
+            qDebug()<<"Không tải được từ vựng";
+            return;
+        }
+        else{
+            v.clear();
+            QTextStream in(&filegoc);
+            while (!in.atEnd()){
+                QString line=in.readLine();
+                QStringList tumoi=line.split(": ");
+                if(tumoi.size()==2)
+                    v.push_back({tumoi[0].toStdString(),tumoi[1].toStdString()});
+            }
+            filegoc.close();
+            qDebug()<<"Đã tải thành công "<<v.size()<<" từ vựng từ file dữ liệu gốc vào ứng dụng";
+        }
     }
-    file.close();
-    qDebug()<<"Đã tải thành công "<<v.size()<<" từ vựng vào ứng dụng";
 }
 
 
@@ -597,10 +622,12 @@ void MainWindow::docfilehocphan()
         }
         else {
             QStringList parts=line.split(": ");
-            Tuvung tumoi;
-            tumoi.tienganh=parts[0].toStdString();
-            tumoi.tiengviet=parts[1].toStdString();
-            mothocphan.push_back(tumoi);
+            if(parts.size()==2){
+                Tuvung tumoi;
+                tumoi.tienganh=parts[0].toStdString();
+                tumoi.tiengviet=parts[1].toStdString();
+                mothocphan.push_back(tumoi);
+            }
         }
     }
     danhsachhocphan.push_back(mothocphan);

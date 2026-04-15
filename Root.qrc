@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>dictionary_root.txt</file>
+    </qresource>
+</RCC>

@@ -1,6 +1,0 @@
-#con vật
-cat: mèo
-dog: chó
-bird: chim
-#đồ vật
-a: aaa

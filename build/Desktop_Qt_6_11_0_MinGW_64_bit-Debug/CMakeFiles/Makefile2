@@ -83,12 +83,12 @@ CMakeFiles/TuDienNew.dir/all: CMakeFiles/TuDienNew_autogen.dir/all
 CMakeFiles/TuDienNew.dir/all: CMakeFiles/TuDienNew_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TuDienNew.dir\build.make CMakeFiles/TuDienNew.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TuDienNew.dir\build.make CMakeFiles/TuDienNew.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=1,2,3,4 "Built target TuDienNew"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target TuDienNew"
 .PHONY : CMakeFiles/TuDienNew.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TuDienNew.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/TuDienNew.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles 0
 .PHONY : CMakeFiles/TuDienNew.dir/rule
@@ -135,7 +135,7 @@ CMakeFiles/TuDienNew_autogen_timestamp_deps.dir/clean:
 CMakeFiles/TuDienNew_autogen.dir/all: CMakeFiles/TuDienNew_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TuDienNew_autogen.dir\build.make CMakeFiles/TuDienNew_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TuDienNew_autogen.dir\build.make CMakeFiles/TuDienNew_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=5 "Built target TuDienNew_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=7 "Built target TuDienNew_autogen"
 .PHONY : CMakeFiles/TuDienNew_autogen.dir/all
 
 # Build rule for subdir invocation for target.

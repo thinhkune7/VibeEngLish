@@ -199,6 +199,30 @@ TuDienNew_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TuDienNew_autogen.dir\build.make CMakeFiles/TuDienNew_autogen.dir/build
 .PHONY : TuDienNew_autogen/fast
 
+TuDienNew_autogen/EWIEGA46WW/qrc_Root.obj: TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj
+.PHONY : TuDienNew_autogen/EWIEGA46WW/qrc_Root.obj
+
+# target to build an object file
+TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TuDienNew.dir\build.make CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj
+.PHONY : TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj
+
+TuDienNew_autogen/EWIEGA46WW/qrc_Root.i: TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.i
+.PHONY : TuDienNew_autogen/EWIEGA46WW/qrc_Root.i
+
+# target to preprocess a source file
+TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TuDienNew.dir\build.make CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.i
+.PHONY : TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.i
+
+TuDienNew_autogen/EWIEGA46WW/qrc_Root.s: TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.s
+.PHONY : TuDienNew_autogen/EWIEGA46WW/qrc_Root.s
+
+# target to generate assembly for a file
+TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TuDienNew.dir\build.make CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.s
+.PHONY : TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.s
+
 TuDienNew_autogen/mocs_compilation.obj: TuDienNew_autogen/mocs_compilation.cpp.obj
 .PHONY : TuDienNew_autogen/mocs_compilation.obj
 
@@ -286,6 +310,9 @@ help:
 	@echo ... TuDienNew_autogen
 	@echo ... TuDienNew_autogen_timestamp_deps
 	@echo ... TuDienNew
+	@echo ... TuDienNew_autogen/EWIEGA46WW/qrc_Root.obj
+	@echo ... TuDienNew_autogen/EWIEGA46WW/qrc_Root.i
+	@echo ... TuDienNew_autogen/EWIEGA46WW/qrc_Root.s
 	@echo ... TuDienNew_autogen/mocs_compilation.obj
 	@echo ... TuDienNew_autogen/mocs_compilation.i
 	@echo ... TuDienNew_autogen/mocs_compilation.s

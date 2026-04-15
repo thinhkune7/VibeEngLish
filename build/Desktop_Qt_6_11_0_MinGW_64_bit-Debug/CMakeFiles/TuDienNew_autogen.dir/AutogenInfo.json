@@ -362,7 +362,8 @@
 		"D:/QT/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake",
 		"D:/QT/Tools/CMake_64/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake",
 		"D:/QT/6.11.0/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
-		"D:/QT/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake"
+		"D:/QT/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
+		"D:/ProductionQT/TuDienNew/TuDienNew/Root.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "D:/ProductionQT/TuDienNew/TuDienNew",
 	"CROSS_CONFIG" : false,

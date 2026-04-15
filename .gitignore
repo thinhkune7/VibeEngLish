@@ -1,5 +1,6 @@
 # Chặn toàn bộ thư mục build (Dành cho CMake/Qt6)
 build-*/
+build/
 .cmake/
 
 # Chặn các file cài đặt cá nhân của người dùng

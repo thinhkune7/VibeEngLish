@@ -823,6 +823,7 @@ CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj: D:/ProductionQT/TuDienNew/TuDienNew
   TuDienNew_autogen/include/ui_mainwindow.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/QCoreApplication \
   D:/QT/6.11.0/mingw_64/include/QtCore/QDebug \
+  D:/QT/6.11.0/mingw_64/include/QtCore/QDirIterator \
   D:/QT/6.11.0/mingw_64/include/QtCore/QFile \
   D:/QT/6.11.0/mingw_64/include/QtCore/QStringList \
   D:/QT/6.11.0/mingw_64/include/QtCore/QTextStream \
@@ -854,6 +855,7 @@ CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj: D:/ProductionQT/TuDienNew/TuDienNew
   D:/QT/6.11.0/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qbytearraylist.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/QT/6.11.0/mingw_64/include/QtCore/qcalendar.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qchar.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qcheckedint_impl.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qcompare.h \
@@ -871,13 +873,18 @@ CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj: D:/ProductionQT/TuDienNew/TuDienNew
   D:/QT/6.11.0/mingw_64/include/QtCore/qcoreevent.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qdatastream.h \
+  D:/QT/6.11.0/mingw_64/include/QtCore/qdatetime.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qdeadlinetimer.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qdebug.h \
+  D:/QT/6.11.0/mingw_64/include/QtCore/qdir.h \
+  D:/QT/6.11.0/mingw_64/include/QtCore/qdiriterator.h \
+  D:/QT/6.11.0/mingw_64/include/QtCore/qdirlisting.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qendian.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qeventloop.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qexceptionhandling.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qfile.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qfiledevice.h \
+  D:/QT/6.11.0/mingw_64/include/QtCore/qfileinfo.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qflags.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qfloat16.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qforeach.h \
@@ -954,6 +961,7 @@ CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj: D:/ProductionQT/TuDienNew/TuDienNew
   D:/QT/6.11.0/mingw_64/include/QtCore/qtenvironmentvariables.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qtextstream.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qtformat_impl.h \
+  D:/QT/6.11.0/mingw_64/include/QtCore/qtimezone.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qtmetamacros.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qtnoop.h \
   D:/QT/6.11.0/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -1315,6 +1323,8 @@ CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj: D:/ProductionQT/TuDienNew/TuDienNew
   D:/ProductionQT/TuDienNew/TuDienNew/mainwindow.h
 
 
+D:/QT/6.11.0/mingw_64/include/QtCore/qcalendar.h:
+
 D:/ProductionQT/TuDienNew/TuDienNew/mainwindow.h:
 
 D:/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map:
@@ -1463,6 +1473,8 @@ D:/QT/6.11.0/mingw_64/include/QtCore/qbytearrayalgorithms.h:
 
 D:/QT/6.11.0/mingw_64/include/QtCore/qfunctionaltools_impl.h:
 
+D:/QT/6.11.0/mingw_64/include/QtCore/QDirIterator:
+
 D:/QT/6.11.0/mingw_64/include/QtCore/qbytearraylist.h:
 
 D:/QT/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h:
@@ -1592,6 +1604,8 @@ D:/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/stdint.h:
 D:/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc:
 
 D:/QT/6.11.0/mingw_64/include/QtCore/qpoint.h:
+
+D:/QT/6.11.0/mingw_64/include/QtCore/qdir.h:
 
 D:/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_types.h:
 
@@ -1790,6 +1804,8 @@ D:/QT/6.11.0/mingw_64/include/QtGui/qkeysequence.h:
 D:/QT/6.11.0/mingw_64/include/QtWidgets/qdialog.h:
 
 D:/QT/6.11.0/mingw_64/include/QtGui/qpaintdevice.h:
+
+D:/QT/6.11.0/mingw_64/include/QtCore/qdiriterator.h:
 
 D:/QT/6.11.0/mingw_64/include/QtGui/qpalette.h:
 
@@ -2255,9 +2271,17 @@ D:/QT/6.11.0/mingw_64/include/QtCore/QVariant:
 
 D:/QT/6.11.0/mingw_64/include/QtCore/qabstractitemmodel.h:
 
+D:/QT/6.11.0/mingw_64/include/QtCore/qdatetime.h:
+
+D:/QT/6.11.0/mingw_64/include/QtCore/qdirlisting.h:
+
 D:/QT/6.11.0/mingw_64/include/QtCore/qfiledevice.h:
 
+D:/QT/6.11.0/mingw_64/include/QtCore/qfileinfo.h:
+
 D:/QT/6.11.0/mingw_64/include/QtCore/qregularexpression.h:
+
+D:/QT/6.11.0/mingw_64/include/QtCore/qtimezone.h:
 
 D:/QT/6.11.0/mingw_64/include/QtGui/qpicture.h:
 

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "D:/ProductionQT/TuDienNew/TuDienNew/CMakeLists.txt"
+  "D:/ProductionQT/TuDienNew/TuDienNew/Root.qrc"
   ".qtcreator/cmake-helper/maintenance_tool_provider.cmake"
   ".qtcreator/cmake-helper/package-manager.cmake"
   ".qtcreator/cmake-helper/qtcreator-project.cmake"
@@ -256,6 +257,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/TuDienNew_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/TuDienNew_autogen.dir/AutoRcc_Root_EWIEGA46WW_Info.json"
   ".qt/QtDeploySupport.cmake"
   ".qt/deploy_TuDienNew_1711022ef5.cmake"
   ".qt/QtDeployTargets.cmake"

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj"
+  "CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj.d"
   "CMakeFiles/TuDienNew.dir/TuDienNew_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/TuDienNew.dir/TuDienNew_autogen/mocs_compilation.cpp.obj.d"
   "CMakeFiles/TuDienNew.dir/main.cpp.obj"
@@ -11,6 +13,7 @@ file(REMOVE_RECURSE
   "TuDienNew.exe"
   "TuDienNew.exe.manifest"
   "TuDienNew.pdb"
+  "TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp"
   "libTuDienNew.dll.a"
 )
 

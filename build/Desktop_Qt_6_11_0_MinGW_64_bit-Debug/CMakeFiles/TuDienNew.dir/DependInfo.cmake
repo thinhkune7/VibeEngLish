@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/ProductionQT/TuDienNew/TuDienNew/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp" "CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj" "gcc" "CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj.d"
   "D:/ProductionQT/TuDienNew/TuDienNew/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/TuDienNew_autogen/mocs_compilation.cpp" "CMakeFiles/TuDienNew.dir/TuDienNew_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/TuDienNew.dir/TuDienNew_autogen/mocs_compilation.cpp.obj.d"
   "D:/ProductionQT/TuDienNew/TuDienNew/main.cpp" "CMakeFiles/TuDienNew.dir/main.cpp.obj" "gcc" "CMakeFiles/TuDienNew.dir/main.cpp.obj.d"
   "D:/ProductionQT/TuDienNew/TuDienNew/mainwindow.cpp" "CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj.d"

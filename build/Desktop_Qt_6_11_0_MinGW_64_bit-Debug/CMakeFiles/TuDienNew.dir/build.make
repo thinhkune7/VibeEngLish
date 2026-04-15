@@ -68,11 +68,19 @@ include CMakeFiles/TuDienNew.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/TuDienNew.dir/flags.make
 
+TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp: D:/ProductionQT/TuDienNew/TuDienNew/Root.qrc
+TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp: CMakeFiles/TuDienNew_autogen.dir/AutoRcc_Root_EWIEGA46WW_Info.json
+TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp: D:/ProductionQT/TuDienNew/TuDienNew/dictionary_root.txt
+TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp: D:/QT/6.11.0/mingw_64/bin/rcc.exe
+TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp: D:/QT/6.11.0/mingw_64/bin/rcc.exe
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for Root.qrc"
+	D:\QT\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc D:/ProductionQT/TuDienNew/TuDienNew/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/TuDienNew_autogen.dir/AutoRcc_Root_EWIEGA46WW_Info.json Debug
+
 CMakeFiles/TuDienNew.dir/TuDienNew_autogen/mocs_compilation.cpp.obj: CMakeFiles/TuDienNew.dir/flags.make
 CMakeFiles/TuDienNew.dir/TuDienNew_autogen/mocs_compilation.cpp.obj: CMakeFiles/TuDienNew.dir/includes_CXX.rsp
 CMakeFiles/TuDienNew.dir/TuDienNew_autogen/mocs_compilation.cpp.obj: TuDienNew_autogen/mocs_compilation.cpp
 CMakeFiles/TuDienNew.dir/TuDienNew_autogen/mocs_compilation.cpp.obj: CMakeFiles/TuDienNew.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TuDienNew.dir/TuDienNew_autogen/mocs_compilation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TuDienNew.dir/TuDienNew_autogen/mocs_compilation.cpp.obj"
 	D:\QT\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TuDienNew.dir/TuDienNew_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\TuDienNew.dir\TuDienNew_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\TuDienNew.dir\TuDienNew_autogen\mocs_compilation.cpp.obj -c D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\TuDienNew_autogen\mocs_compilation.cpp
 
 CMakeFiles/TuDienNew.dir/TuDienNew_autogen/mocs_compilation.cpp.i: cmake_force
@@ -87,7 +95,7 @@ CMakeFiles/TuDienNew.dir/main.cpp.obj: CMakeFiles/TuDienNew.dir/flags.make
 CMakeFiles/TuDienNew.dir/main.cpp.obj: CMakeFiles/TuDienNew.dir/includes_CXX.rsp
 CMakeFiles/TuDienNew.dir/main.cpp.obj: D:/ProductionQT/TuDienNew/TuDienNew/main.cpp
 CMakeFiles/TuDienNew.dir/main.cpp.obj: CMakeFiles/TuDienNew.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TuDienNew.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TuDienNew.dir/main.cpp.obj"
 	D:\QT\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TuDienNew.dir/main.cpp.obj -MF CMakeFiles\TuDienNew.dir\main.cpp.obj.d -o CMakeFiles\TuDienNew.dir\main.cpp.obj -c D:\ProductionQT\TuDienNew\TuDienNew\main.cpp
 
 CMakeFiles/TuDienNew.dir/main.cpp.i: cmake_force
@@ -102,7 +110,7 @@ CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj: CMakeFiles/TuDienNew.dir/flags.make
 CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj: CMakeFiles/TuDienNew.dir/includes_CXX.rsp
 CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj: D:/ProductionQT/TuDienNew/TuDienNew/mainwindow.cpp
 CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj: CMakeFiles/TuDienNew.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj"
 	D:\QT\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj -MF CMakeFiles\TuDienNew.dir\mainwindow.cpp.obj.d -o CMakeFiles\TuDienNew.dir\mainwindow.cpp.obj -c D:\ProductionQT\TuDienNew\TuDienNew\mainwindow.cpp
 
 CMakeFiles/TuDienNew.dir/mainwindow.cpp.i: cmake_force
@@ -113,11 +121,27 @@ CMakeFiles/TuDienNew.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TuDienNew.dir/mainwindow.cpp.s"
 	D:\QT\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ProductionQT\TuDienNew\TuDienNew\mainwindow.cpp -o CMakeFiles\TuDienNew.dir\mainwindow.cpp.s
 
+CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj: CMakeFiles/TuDienNew.dir/flags.make
+CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj: CMakeFiles/TuDienNew.dir/includes_CXX.rsp
+CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj: TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp
+CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj: CMakeFiles/TuDienNew.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj"
+	D:\QT\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj -MF CMakeFiles\TuDienNew.dir\TuDienNew_autogen\EWIEGA46WW\qrc_Root.cpp.obj.d -o CMakeFiles\TuDienNew.dir\TuDienNew_autogen\EWIEGA46WW\qrc_Root.cpp.obj -c D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\TuDienNew_autogen\EWIEGA46WW\qrc_Root.cpp
+
+CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.i"
+	D:\QT\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\TuDienNew_autogen\EWIEGA46WW\qrc_Root.cpp > CMakeFiles\TuDienNew.dir\TuDienNew_autogen\EWIEGA46WW\qrc_Root.cpp.i
+
+CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.s"
+	D:\QT\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\TuDienNew_autogen\EWIEGA46WW\qrc_Root.cpp -o CMakeFiles\TuDienNew.dir\TuDienNew_autogen\EWIEGA46WW\qrc_Root.cpp.s
+
 # Object files for target TuDienNew
 TuDienNew_OBJECTS = \
 "CMakeFiles/TuDienNew.dir/TuDienNew_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/TuDienNew.dir/main.cpp.obj" \
-"CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj"
+"CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj" \
+"CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj"
 
 # External object files for target TuDienNew
 TuDienNew_EXTERNAL_OBJECTS =
@@ -125,6 +149,7 @@ TuDienNew_EXTERNAL_OBJECTS =
 TuDienNew.exe: CMakeFiles/TuDienNew.dir/TuDienNew_autogen/mocs_compilation.cpp.obj
 TuDienNew.exe: CMakeFiles/TuDienNew.dir/main.cpp.obj
 TuDienNew.exe: CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj
+TuDienNew.exe: CMakeFiles/TuDienNew.dir/TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp.obj
 TuDienNew.exe: CMakeFiles/TuDienNew.dir/build.make
 TuDienNew.exe: D:/QT/6.11.0/mingw_64/lib/libQt6Widgets.a
 TuDienNew.exe: D:/QT/6.11.0/mingw_64/lib/libQt6Gui.a
@@ -133,7 +158,7 @@ TuDienNew.exe: D:/QT/6.11.0/mingw_64/lib/libQt6EntryPoint.a
 TuDienNew.exe: CMakeFiles/TuDienNew.dir/linkLibs.rsp
 TuDienNew.exe: CMakeFiles/TuDienNew.dir/objects1.rsp
 TuDienNew.exe: CMakeFiles/TuDienNew.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TuDienNew.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable TuDienNew.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TuDienNew.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -144,7 +169,7 @@ CMakeFiles/TuDienNew.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles\TuDienNew.dir\cmake_clean.cmake
 .PHONY : CMakeFiles/TuDienNew.dir/clean
 
-CMakeFiles/TuDienNew.dir/depend:
+CMakeFiles/TuDienNew.dir/depend: TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\ProductionQT\TuDienNew\TuDienNew D:\ProductionQT\TuDienNew\TuDienNew D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug D:\ProductionQT\TuDienNew\TuDienNew\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\TuDienNew.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/TuDienNew.dir/depend
 

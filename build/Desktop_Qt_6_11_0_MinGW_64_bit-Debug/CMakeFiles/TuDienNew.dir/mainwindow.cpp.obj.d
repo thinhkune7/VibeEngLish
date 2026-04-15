@@ -495,4 +495,12 @@ CMakeFiles/TuDienNew.dir/mainwindow.cpp.obj: \
  D:/QT/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h \
  D:/QT/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
  D:/QT/6.11.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
- D:/QT/6.11.0/mingw_64/include/QtCore/QCoreApplication
+ D:/QT/6.11.0/mingw_64/include/QtCore/QCoreApplication \
+ D:/QT/6.11.0/mingw_64/include/QtCore/QDirIterator \
+ D:/QT/6.11.0/mingw_64/include/QtCore/qdiriterator.h \
+ D:/QT/6.11.0/mingw_64/include/QtCore/qdir.h \
+ D:/QT/6.11.0/mingw_64/include/QtCore/qdirlisting.h \
+ D:/QT/6.11.0/mingw_64/include/QtCore/qdatetime.h \
+ D:/QT/6.11.0/mingw_64/include/QtCore/qcalendar.h \
+ D:/QT/6.11.0/mingw_64/include/QtCore/qfileinfo.h \
+ D:/QT/6.11.0/mingw_64/include/QtCore/qtimezone.h
