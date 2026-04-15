@@ -1,0 +1,9 @@
+D:/ProductionQT/TuDienNew/TuDienNew/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/TuDienNew.dir
+D:/ProductionQT/TuDienNew/TuDienNew/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+D:/ProductionQT/TuDienNew/TuDienNew/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+D:/ProductionQT/TuDienNew/TuDienNew/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+D:/ProductionQT/TuDienNew/TuDienNew/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/install.dir
+D:/ProductionQT/TuDienNew/TuDienNew/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+D:/ProductionQT/TuDienNew/TuDienNew/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+D:/ProductionQT/TuDienNew/TuDienNew/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/TuDienNew_autogen_timestamp_deps.dir
+D:/ProductionQT/TuDienNew/TuDienNew/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/TuDienNew_autogen.dir

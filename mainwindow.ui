@@ -1,0 +1,2386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>994</width>
+    <height>712</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralwidget, QStackedWidget {
+    background-color: #F3F4F6; /* Màu xám rất nhạt, thanh lịch và không chói mắt */
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="currentIndex">
+       <number>9</number>
+      </property>
+      <widget class="QWidget" name="p0_menu_chinh">
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <spacer name="horizontalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>20</number>
+          </property>
+          <item>
+           <spacer name="verticalSpacer_8">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_tra_tu">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>600</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3498db; /* Màu nền xanh */
+    color: white;              /* Màu chữ trắng */
+    border-radius: 10px;       /* Bo góc tròn */
+    padding: 10px 20px;        /* Độ dày của nút */
+    font-weight: bold;         /* In đậm chữ */
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #2980b9; /* Đổi màu đậm hơn khi chuột đưa vào */
+}
+
+QPushButton:pressed {
+    background-color: #1c5980; /* Màu khi click chuột xuống */
+}</string>
+            </property>
+            <property name="text">
+             <string>TRA TỪ </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_flashcard">
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>600</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3498db; /* Màu nền xanh */
+    color: white;              /* Màu chữ trắng */
+    border-radius: 10px;       /* Bo góc tròn */
+    padding: 10px 20px;        /* Độ dày của nút */
+    font-weight: bold;         /* In đậm chữ */
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #2980b9; /* Đổi màu đậm hơn khi chuột đưa vào */
+}
+
+QPushButton:pressed {
+    background-color: #1c5980; /* Màu khi click chuột xuống */
+}</string>
+            </property>
+            <property name="text">
+             <string>HỌC VỚI FLASHCARD</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_quan_ly_tu_dien">
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>600</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3498db; /* Màu nền xanh */
+    color: white;              /* Màu chữ trắng */
+    border-radius: 10px;       /* Bo góc tròn */
+    padding: 10px 20px;        /* Độ dày của nút */
+    font-weight: bold;         /* In đậm chữ */
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #2980b9; /* Đổi màu đậm hơn khi chuột đưa vào */
+}
+
+QPushButton:pressed {
+    background-color: #1c5980; /* Màu khi click chuột xuống */
+}</string>
+            </property>
+            <property name="text">
+             <string>QUẢN LÝ TỪ ĐIỂN</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_save_close">
+            <property name="minimumSize">
+             <size>
+              <width>400</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>600</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3498db; /* Màu nền xanh */
+    color: white;              /* Màu chữ trắng */
+    border-radius: 10px;       /* Bo góc tròn */
+    padding: 10px 20px;        /* Độ dày của nút */
+    font-weight: bold;         /* In đậm chữ */
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #2980b9; /* Đổi màu đậm hơn khi chuột đưa vào */
+}
+
+QPushButton:pressed {
+    background-color: #1c5980; /* Màu khi click chuột xuống */
+}</string>
+            </property>
+            <property name="text">
+             <string>LƯU VÀ THOÁT ỨNG DỤNG</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="p1_tra_tu">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QPushButton" name="btn_back_tu_tra_tu">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>QUAY VỀ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>12</number>
+          </property>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="text_nhap_tu">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>500</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>1000</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Nền trắng sáng */
+    color: #1F2937;            /* CHỮ MÀU ĐEN ĐẬM - Đảm bảo luôn nhìn thấy chữ */
+    border: 1px solid #D1D5DB; /* Viền xám nhạt */
+    border-radius: 8px;        /* Bo góc mềm mại */
+    padding: 8px 12px;         /* Khoảng cách từ chữ tới viền vừa đủ */
+    font-size: 14px;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3B82F6; /* Khi click vào gõ, viền sáng màu xanh dương */
+    background-color: #FFFFFF;
+}</string>
+            </property>
+            <property name="text">
+             <string>TRA TỪ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>NHẬP TỪ CẦN TRA CỨU</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_tim_kiem">
+            <property name="minimumSize">
+             <size>
+              <width>80</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>TÌM</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="lbl_ket_qua">
+            <property name="minimumSize">
+             <size>
+              <width>500</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>500</width>
+              <height>80</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    background-color: #FFFFFF; /* Nền thẻ màu trắng */
+    color: #1D4ED8;            /* Chữ màu xanh dương đậm cho dễ học */
+    border: 2px solid #E5E7EB; /* Viền xám rất mờ */
+    border-radius: 16px;       /* Bo góc tròn trịa giống cái thẻ thật */
+    padding: 30px;             /* Khoảng cách từ viền vào chữ rộng ra */
+    font-size: 14px;           /* Chữ từ vựng cực to */
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+    /* qproperty-alignment: AlignCenter;  &lt;- Bạn chỉnh Canh giữa trong Property Editor sẽ tốt hơn */
+}</string>
+            </property>
+            <property name="text">
+             <string>KẾT QUẢ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="p2_quan_ly_tu_dien">
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QPushButton" name="btn_back_tu_quan_ly_tu_dien">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>QUAY VỀ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>30</number>
+          </property>
+          <item alignment="Qt::AlignmentFlag::AlignHCenter">
+           <widget class="QPushButton" name="btn_them_tu_vung">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>600</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>THÊM TỪ VỰNG</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignmentFlag::AlignHCenter">
+           <widget class="QPushButton" name="btn_xoa_tu_vung">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>600</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>XOÁ TỪ VỰNG</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignmentFlag::AlignHCenter">
+           <widget class="QPushButton" name="btn_xem_tu_dien">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>600</width>
+              <height>70</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>XEM TỪ ĐIỂN</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="p3_them_tu_vung">
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <property name="spacing">
+           <number>20</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <item>
+             <widget class="QPushButton" name="btn_back_tu_them_tu_vung">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+              </property>
+              <property name="text">
+               <string>QUAY VỀ</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Orientation::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_13">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item alignment="Qt::AlignmentFlag::AlignHCenter">
+           <widget class="QLineEdit" name="text_nhap_tu_tieng_anh_them">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>500</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>600</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Nền trắng sáng */
+    color: #1F2937;            /* CHỮ MÀU ĐEN ĐẬM - Đảm bảo luôn nhìn thấy chữ */
+    border: 1px solid #D1D5DB; /* Viền xám nhạt */
+    border-radius: 8px;        /* Bo góc mềm mại */
+    padding: 8px 12px;         /* Khoảng cách từ chữ tới viền vừa đủ */
+    font-size: 14px;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3B82F6; /* Khi click vào gõ, viền sáng màu xanh dương */
+    background-color: #FFFFFF;
+}</string>
+            </property>
+            <property name="text">
+             <string>NHẬP TỪ TIẾNG ANH</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>NHẬP TỪ TIẾNG ANH</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignmentFlag::AlignHCenter">
+           <widget class="QLineEdit" name="text_nhap_tu_tieng_viet_them">
+            <property name="minimumSize">
+             <size>
+              <width>500</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>600</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Nền trắng sáng */
+    color: #1F2937;            /* CHỮ MÀU ĐEN ĐẬM - Đảm bảo luôn nhìn thấy chữ */
+    border: 1px solid #D1D5DB; /* Viền xám nhạt */
+    border-radius: 8px;        /* Bo góc mềm mại */
+    padding: 8px 12px;         /* Khoảng cách từ chữ tới viền vừa đủ */
+    font-size: 14px;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3B82F6; /* Khi click vào gõ, viền sáng màu xanh dương */
+    background-color: #FFFFFF;
+}</string>
+            </property>
+            <property name="text">
+             <string>NHẬP NGHĨA TIẾNG VIỆT</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>NHẬP NGHĨA TIẾNG VIỆT</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignmentFlag::AlignHCenter">
+           <widget class="QPushButton" name="btn_them">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>THÊM</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_11">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <spacer name="horizontalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="lbl_ket_qua_them">
+            <property name="minimumSize">
+             <size>
+              <width>600</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>600</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    background-color: #FFFFFF; /* Nền thẻ màu trắng */
+    color: #1D4ED8;            /* Chữ màu xanh dương đậm cho dễ học */
+    border: 2px solid #E5E7EB; /* Viền xám rất mờ */
+    border-radius: 16px;       /* Bo góc tròn trịa giống cái thẻ thật */
+    padding: 30px;             /* Khoảng cách từ viền vào chữ rộng ra */
+    font-size: 14px;           /* Chữ từ vựng cực to */
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+    /* qproperty-alignment: AlignCenter;  &lt;- Bạn chỉnh Canh giữa trong Property Editor sẽ tốt hơn */
+}</string>
+            </property>
+            <property name="text">
+             <string>KẾT QUẢ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_11">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_12">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="p4_xoa_tu_vung">
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <item>
+             <widget class="QPushButton" name="btn_back_tu_xoa_tu_vung">
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+              </property>
+              <property name="text">
+               <string>QUAY VỀ</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_12">
+              <property name="orientation">
+               <enum>Qt::Orientation::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_14">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_17">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_19">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_18">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item alignment="Qt::AlignmentFlag::AlignHCenter">
+           <widget class="QLineEdit" name="text_nhap_tu_tieng_anh_xoa">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>500</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>500</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Nền trắng sáng */
+    color: #1F2937;            /* CHỮ MÀU ĐEN ĐẬM - Đảm bảo luôn nhìn thấy chữ */
+    border: 1px solid #D1D5DB; /* Viền xám nhạt */
+    border-radius: 8px;        /* Bo góc mềm mại */
+    padding: 8px 12px;         /* Khoảng cách từ chữ tới viền vừa đủ */
+    font-size: 14px;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3B82F6; /* Khi click vào gõ, viền sáng màu xanh dương */
+    background-color: #FFFFFF;
+}</string>
+            </property>
+            <property name="text">
+             <string>NHẬP TỪ TIẾNG ANH</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>NHẬP TỪ TIẾNG ANH</string>
+            </property>
+           </widget>
+          </item>
+          <item alignment="Qt::AlignmentFlag::AlignHCenter">
+           <widget class="QPushButton" name="btn_them_2">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>XOÁ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_15">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_20">
+            <property name="orientation">
+             <enum>Qt::Orientation::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <spacer name="horizontalSpacer_13">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="lbl_ket_qua_xoa">
+            <property name="minimumSize">
+             <size>
+              <width>600</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>600</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    background-color: #FFFFFF; /* Nền thẻ màu trắng */
+    color: #1D4ED8;            /* Chữ màu xanh dương đậm cho dễ học */
+    border: 2px solid #E5E7EB; /* Viền xám rất mờ */
+    border-radius: 16px;       /* Bo góc tròn trịa giống cái thẻ thật */
+    padding: 30px;             /* Khoảng cách từ viền vào chữ rộng ra */
+    font-size: 14px;           /* Chữ từ vựng cực to */
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+    /* qproperty-alignment: AlignCenter;  &lt;- Bạn chỉnh Canh giữa trong Property Editor sẽ tốt hơn */
+}</string>
+            </property>
+            <property name="text">
+             <string>KẾT QUẢ</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_14">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_16">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="p5_xem_tu_dien">
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_16">
+          <item>
+           <widget class="QPushButton" name="btn_back_tu_xem_tu_dien">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>QUAY VỀ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_15">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_21">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item alignment="Qt::AlignmentFlag::AlignHCenter">
+           <widget class="QListWidget" name="lw_show_tu_dien">
+            <property name="minimumSize">
+             <size>
+              <width>800</width>
+              <height>550</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>800</width>
+              <height>550</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 5px;
+    color: #1F2937;
+    font-size: 15px;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QListWidget::item {
+    padding: 10px;
+    border-bottom: 1px solid #F3F4F6; /* Vạch kẻ mờ giữa các từ vựng */
+}
+
+QListWidget::item:selected {
+    background-color: #EFF6FF; /* Highlight màu xanh nhạt khi chọn 1 từ */
+    color: #1D4ED8;
+    border-radius: 5px;
+}
+QListWidget QScrollBar:vertical {
+    border: none;
+    background-color: #F9FAFB; /* Nền rãnh trượt hơi xám rất nhẹ để phân biệt */
+    width: 12px;
+    margin: 0px;
+    border-radius: 6px;
+}
+
+/* CỤC TẨY (THANH NẮM) KÉO LÊN XUỐNG */
+QListWidget QScrollBar::handle:vertical {
+    background-color: #6B7280; /* XÁM ĐẬM - Cực kỳ dễ nhìn */
+    min-height: 40px;          /* Cho thanh nắm dài ra một chút để dễ bấm */
+    border-radius: 6px;
+    margin: 2px;
+}
+
+/* KHI ĐƯA CHUỘT VÀO THANH CUỘN */
+QListWidget QScrollBar::handle:vertical:hover {
+    background-color: #4B5563; /* Đậm màu hơn */
+}
+
+/* KHI CLICK VÀ NHẤN GIỮ */
+QListWidget QScrollBar::handle:vertical:pressed {
+    background-color: #374151; /* Gần như đen */
+}
+
+/* ẨN 2 NÚT MŨI TÊN LÊN/XUỐNG ĐỂ TRÔNG HIỆN ĐẠI HƠN */
+QListWidget QScrollBar::add-line:vertical, 
+QListWidget QScrollBar::sub-line:vertical {
+    height: 0px;
+    background: none;
+}
+
+QListWidget QScrollBar::add-page:vertical, 
+QListWidget QScrollBar::sub-page:vertical {
+    background: none;
+}</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_22">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="p6_flashcard">
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="spacing">
+           <number>200</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btn_back_tu_flashcard">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>QUAY VỀ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_tao_hoc_phan">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>TẠO HỌC PHẦN MỚI</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_xoa_hoc_phan">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>XOÁ HỌC PHẦN</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_13">
+          <item alignment="Qt::AlignmentFlag::AlignHCenter">
+           <widget class="QScrollArea" name="scrollArea_2">
+            <property name="minimumSize">
+             <size>
+              <width>600</width>
+              <height>550</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>600</width>
+              <height>550</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QScrollArea {
+    border: 1px solid #E5E7EB; /* Viền xám rất mờ, tạo cảm giác phân cách */
+    background-color: #FFFFFF; /* Màu nền trắng tinh */
+    border-radius: 10px;       /* Bo góc toàn bộ khung */
+    padding: 5px;              /* Đẩy nội dung xích vào trong một chút */
+}
+
+/* Đảm bảo khung chứa nội dung con bên trong cũng màu trắng đồng bộ */
+QScrollArea &gt; QWidget &gt; QWidget {
+    background-color: #FFFFFF; 
+}
+
+
+/* =======================================================
+   2. THANH CUỘN DỌC (VERTICAL SCROLLBAR)
+======================================================== */
+QScrollBar:vertical {
+    border: none;
+    background-color: #F9FAFB; /* Rãnh cuộn màu xám cực nhạt để dễ nhận biết */
+    width: 10px;               /* Độ dày của thanh cuộn */
+    margin: 0px;
+    border-radius: 5px;        /* Bo góc rãnh cuộn */
+}
+
+/* KHỐI NẮM TRƯỢT (CỤC TẨY) */
+QScrollBar::handle:vertical {
+    background-color: #9CA3AF; /* Màu xám nổi bật trên nền trắng */
+    min-height: 40px;          
+    border-radius: 5px;        
+}
+
+/* KHI ĐƯA CHUỘT VÀO (HOVER) */
+QScrollBar::handle:vertical:hover {
+    background-color: #6B7280; /* Đậm màu hơn khi di chuột */
+}
+
+/* KHI NHẤN GIỮ KÉO (PRESSED) */
+QScrollBar::handle:vertical:pressed {
+    background-color: #4B5563; /* Đậm nhất khi đang kéo */
+}
+
+/* ẨN 2 NÚT MŨI TÊN (Lên/Xuống) */
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px; 
+    background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none; 
+}</string>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>588</width>
+               <height>538</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="layout_danh_sach_hoc_phan"/>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="p7_them_flashcard">
+       <layout class="QVBoxLayout" name="verticalLayout_14">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_20">
+          <property name="spacing">
+           <number>16</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btn_back_tu_them_flashcard">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>QUAY VỀ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="text_ten_hoc_phan">
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    background-color: #FFFFFF; /* Nền trắng sáng */
+    color: #1F2937;            /* CHỮ MÀU ĐEN ĐẬM - Đảm bảo luôn nhìn thấy chữ */
+    border: 1px solid #D1D5DB; /* Viền xám nhạt */
+    border-radius: 8px;        /* Bo góc mềm mại */
+    padding: 8px 12px;         /* Khoảng cách từ chữ tới viền vừa đủ */
+    font-size: 14px;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3B82F6; /* Khi click vào gõ, viền sáng màu xanh dương */
+    background-color: #FFFFFF;
+}</string>
+            </property>
+            <property name="text">
+             <string>TÊN HỌC PHẦN</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>ĐẶT TÊN HỌC PHẦN</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_them_tu_flashcard">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>THÊM TỪ VỰNG</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignHCenter">
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="minimumSize">
+           <size>
+            <width>800</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>800</width>
+            <height>500</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QScrollArea {
+    border: 1px solid #E5E7EB; /* Viền xám rất mờ, tạo cảm giác phân cách */
+    background-color: #FFFFFF; /* Màu nền trắng tinh */
+    border-radius: 10px;       /* Bo góc toàn bộ khung */
+    padding: 5px;              /* Đẩy nội dung xích vào trong một chút */
+}
+
+/* Đảm bảo khung chứa nội dung con bên trong cũng màu trắng đồng bộ */
+QScrollArea &gt; QWidget &gt; QWidget {
+    background-color: #FFFFFF; 
+}
+
+
+/* =======================================================
+   2. THANH CUỘN DỌC (VERTICAL SCROLLBAR)
+======================================================== */
+QScrollBar:vertical {
+    border: none;
+    background-color: #F9FAFB; /* Rãnh cuộn màu xám cực nhạt để dễ nhận biết */
+    width: 10px;               /* Độ dày của thanh cuộn */
+    margin: 0px;
+    border-radius: 5px;        /* Bo góc rãnh cuộn */
+}
+
+/* KHỐI NẮM TRƯỢT (CỤC TẨY) */
+QScrollBar::handle:vertical {
+    background-color: #9CA3AF; /* Màu xám nổi bật trên nền trắng */
+    min-height: 40px;          
+    border-radius: 5px;        
+}
+
+/* KHI ĐƯA CHUỘT VÀO (HOVER) */
+QScrollBar::handle:vertical:hover {
+    background-color: #6B7280; /* Đậm màu hơn khi di chuột */
+}
+
+/* KHI NHẤN GIỮ KÉO (PRESSED) */
+QScrollBar::handle:vertical:pressed {
+    background-color: #4B5563; /* Đậm nhất khi đang kéo */
+}
+
+/* ẨN 2 NÚT MŨI TÊN (Lên/Xuống) */
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px; 
+    background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none; 
+}</string>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scr_danh_sach_tu">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>788</width>
+             <height>488</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="layout_danh_sach_tu"/>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_21">
+          <item>
+           <spacer name="horizontalSpacer_18">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_luu_flashcard">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>LƯU</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="p8_du_lieu_hoc_phan">
+       <layout class="QVBoxLayout" name="verticalLayout_15">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_22">
+          <property name="spacing">
+           <number>200</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btn_back_tu_du_lieu_hoc_phan">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>QUAY VỀ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_hoc_voi_flashcard">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>HỌC VỚI FLASHCARD</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_chinh_sua_hoc_phan">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>CHỈNH SỬA HỌC PHẦN</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item alignment="Qt::AlignmentFlag::AlignHCenter">
+         <widget class="QListWidget" name="lw_du_lieu_hoc_phan">
+          <property name="minimumSize">
+           <size>
+            <width>850</width>
+            <height>550</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>850</width>
+            <height>700</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QListWidget {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 5px;
+    color: #1F2937;
+    font-size: 15px;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QListWidget::item {
+    padding: 10px;
+    border-bottom: 1px solid #F3F4F6; /* Vạch kẻ mờ giữa các từ vựng */
+}
+
+QListWidget::item:selected {
+    background-color: #EFF6FF; /* Highlight màu xanh nhạt khi chọn 1 từ */
+    color: #1D4ED8;
+    border-radius: 5px;
+}
+QListWidget QScrollBar:vertical {
+    border: none;
+    background-color: #F9FAFB; /* Nền rãnh trượt hơi xám rất nhẹ để phân biệt */
+    width: 12px;
+    margin: 0px;
+    border-radius: 6px;
+}
+
+/* CỤC TẨY (THANH NẮM) KÉO LÊN XUỐNG */
+QListWidget QScrollBar::handle:vertical {
+    background-color: #6B7280; /* XÁM ĐẬM - Cực kỳ dễ nhìn */
+    min-height: 40px;          /* Cho thanh nắm dài ra một chút để dễ bấm */
+    border-radius: 6px;
+    margin: 2px;
+}
+
+/* KHI ĐƯA CHUỘT VÀO THANH CUỘN */
+QListWidget QScrollBar::handle:vertical:hover {
+    background-color: #4B5563; /* Đậm màu hơn */
+}
+
+/* KHI CLICK VÀ NHẤN GIỮ */
+QListWidget QScrollBar::handle:vertical:pressed {
+    background-color: #374151; /* Gần như đen */
+}
+
+/* ẨN 2 NÚT MŨI TÊN LÊN/XUỐNG ĐỂ TRÔNG HIỆN ĐẠI HƠN */
+QListWidget QScrollBar::add-line:vertical, 
+QListWidget QScrollBar::sub-line:vertical {
+    height: 0px;
+    background: none;
+}
+
+QListWidget QScrollBar::add-page:vertical, 
+QListWidget QScrollBar::sub-page:vertical {
+    background: none;
+}</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="p9_hoc_voi_flashcard">
+       <layout class="QVBoxLayout" name="verticalLayout_17">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_24">
+          <item>
+           <widget class="QPushButton" name="btn_back_tu_quan_ly_tu_dien_2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>QUAY VỀ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_16">
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_16">
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget_2">
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <widget class="QWidget" name="tienganh">
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <item alignment="Qt::AlignmentFlag::AlignHCenter">
+               <widget class="QPushButton" name="btn_tu_tieng_anh">
+                <property name="minimumSize">
+                 <size>
+                  <width>650</width>
+                  <height>400</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>700</width>
+                  <height>400</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: #10B981; /* Màu xanh ngọc lục bảo tươi sáng */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Không dùng viền */
+    border-radius: 8px;        /* Bo góc mềm mại */
+    padding: 12px 24px;        /* Nút to, không gian bấm rộng rãi */
+    font-size: 24px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #059669; /* Đậm hơn một chút khi đưa chuột vào */
+}
+
+QPushButton:pressed {
+    background-color: #047857; /* Đậm nhất khi người dùng click xuống */
+}</string>
+                </property>
+                <property name="text">
+                 <string>PushButton</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tiengviet">
+             <layout class="QVBoxLayout" name="verticalLayout_19">
+              <item alignment="Qt::AlignmentFlag::AlignHCenter">
+               <widget class="QPushButton" name="btn_tu_tieng_viet">
+                <property name="minimumSize">
+                 <size>
+                  <width>650</width>
+                  <height>400</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>700</width>
+                  <height>400</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+    background-color: #10B981; /* Màu xanh ngọc lục bảo tươi sáng */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Không dùng viền */
+    border-radius: 8px;        /* Bo góc mềm mại */
+    padding: 12px 24px;        /* Nút to, không gian bấm rộng rãi */
+    font-size: 24px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #059669; /* Đậm hơn một chút khi đưa chuột vào */
+}
+
+QPushButton:pressed {
+    background-color: #047857; /* Đậm nhất khi người dùng click xuống */
+}</string>
+                </property>
+                <property name="text">
+                 <string>PushButton</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>200</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btn_tu_truoc_do">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>TỪ TRƯỚC ĐÓ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="lbl_thu_tu_tu">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+    background-color: #8446ff; /* Nền thẻ màu trắng */
+    color: #fcfcfc;            /* Chữ màu xanh dương đậm cho dễ học */
+    border: 2px solid #E5E7EB; /* Viền xám rất mờ */
+    border-radius: 16px;       /* Bo góc tròn trịa giống cái thẻ thật */
+    padding: 5px;             /* Khoảng cách từ viền vào chữ rộng ra */
+    font-size: 18px;           /* Chữ từ vựng cực to */
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+    /* qproperty-alignment: AlignCenter;  &lt;- Bạn chỉnh Canh giữa trong Property Editor sẽ tốt hơn */
+}</string>
+            </property>
+            <property name="text">
+             <string>Thứ tự</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_tu_tiep_theo">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>60</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #3B82F6; /* Màu xanh dương hiện đại */
+    color: #FFFFFF;            /* Chữ màu trắng */
+    border: none;              /* Bỏ viền đen viền mặc định */
+    border-radius: 8px;        /* Bo góc */
+    padding: 10px 20px;        /* Nút to, dễ bấm */
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #2563EB; /* Hiệu ứng di chuột: Nền tối đi một xíu */
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8; /* Hiệu ứng click: Nền tối hẳn lại */
+}</string>
+            </property>
+            <property name="text">
+             <string>TỪ TIẾP THEO</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>994</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

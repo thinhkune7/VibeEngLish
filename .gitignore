@@ -1,0 +1,17 @@
+# Chặn toàn bộ thư mục build (Dành cho CMake/Qt6)
+build-*/
+.cmake/
+
+# Chặn các file cài đặt cá nhân của người dùng
+*.user
+*.user.*
+
+# Chặn các file thực thi nếu lỡ nằm trong thư mục code
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Chặn các thư mục tạm thời của hệ thống cũ
+debug/
+release/

@@ -1,0 +1,3 @@
+D:\QT\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\TuDienNew.dir/objects.a
+D:\QT\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\TuDienNew.dir/objects.a @CMakeFiles\TuDienNew.dir\objects1.rsp
+D:\QT\Tools\mingw1310_64\bin\g++.exe -g -mwindows -Wl,--whole-archive CMakeFiles\TuDienNew.dir/objects.a -Wl,--no-whole-archive -o TuDienNew.exe -Wl,--out-implib,libTuDienNew.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TuDienNew.dir\linkLibs.rsp
