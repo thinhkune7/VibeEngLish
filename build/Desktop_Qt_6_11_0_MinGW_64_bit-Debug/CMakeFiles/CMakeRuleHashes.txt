@@ -1,4 +1,0 @@
-# Hashes of file build rules.
-2ca219e395dbadfb92d914c35ebe142f CMakeFiles/TuDienNew_autogen
-91b2694d546cb8dabadb7e1a41e27dfd TuDienNew_autogen/EWIEGA46WW/qrc_Root.cpp
-3c4ff900f0d4cee88e07e3907791fee1 TuDienNew_autogen/timestamp

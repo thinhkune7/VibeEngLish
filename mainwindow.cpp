@@ -41,12 +41,6 @@ void MainWindow:: docdulieutufile(){
         qDebug()<<"Đã tải thành công "<<v.size()<<" từ vựng từ file dữ liệu người dùng vào ứng dụng";
     }
     else {
-        qDebug() << "--- DANG SIEU AM RUOT APP ---";
-        QDirIterator it(":/", QDirIterator::Subdirectories);
-        while (it.hasNext()) {
-            qDebug() << "Toi thay file:" << it.next();
-        }
-        qDebug() << "-----------------------------";
         QFile filegoc (":/dictionary_root.txt");
         if (!filegoc.open(QIODevice::ReadOnly|QIODevice::Text)){
             qDebug()<<"Không tải được từ vựng";
