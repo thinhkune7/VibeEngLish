@@ -6,7 +6,6 @@
 #include<QDebug>
 #include<QMessageBox>
 #include<QCoreApplication>
-#include <QDirIterator>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -356,7 +355,6 @@ void MainWindow::on_btn_luu_flashcard_clicked()
     else{
     danhsachhocphan.push_back(hocphan);
     tenhocphan.push_back(ui->text_ten_hoc_phan->text().toStdString());
-    int thutuhocphan=danhsachhocphan.size()-1;
     QPushButton *btnMoi=new QPushButton(this);
     btnMoi->setStyleSheet(
         "QPushButton {"
@@ -380,15 +378,23 @@ void MainWindow::on_btn_luu_flashcard_clicked()
 
         );
     nuthocphan.push_back(btnMoi);
-    btnMoi->setText(QString::fromStdString(tenhocphan[thutuhocphan]));
+    btnMoi->setText(QString::fromStdString(tenhocphan[danhsachhocphan.size()-1]));
     connect(btnMoi,&QPushButton::clicked,this, [=](){
+        int index=-1;
+        for (int k=0;k<nuthocphan.size();k++){
+            if (btnMoi==nuthocphan[k]){
+                index=k;
+                break;
+            }
+        }
+        if (index==-1) return;
         ui->stackedWidget->setCurrentIndex(8);
         ui->lw_du_lieu_hoc_phan->clear();
-        for (int i=0;i<danhsachhocphan[thutuhocphan].size();i++){
-            ui->lw_du_lieu_hoc_phan->addItem(QString::fromStdString(danhsachhocphan[thutuhocphan][i].tienganh)+": "+QString::fromStdString((danhsachhocphan[thutuhocphan][i].tiengviet)));
+        for (int i=0;i<danhsachhocphan[index].size();i++){
+            ui->lw_du_lieu_hoc_phan->addItem(QString::fromStdString(danhsachhocphan[index][i].tienganh)+": "+QString::fromStdString((danhsachhocphan[index][i].tiengviet)));
         }
-        hocphantemp=danhsachhocphan[thutuhocphan];
-        thutuhocphanchinhsua=thutuhocphan;
+        hocphantemp=danhsachhocphan[index];
+        thutuhocphanchinhsua=index;
 
     });
     QPushButton *btnXoaHP=new QPushButton(this);
@@ -603,28 +609,25 @@ void MainWindow::docfilehocphan()
         return;
     }
     QTextStream in(&file);
-    vector<Tuvung>mothocphan;
     while (!in.atEnd()){
-        QString line=in.readLine();
+        QString line=in.readLine().trimmed();
+        if (line.isEmpty()) continue;
         if (line.startsWith("#")){
-            QString tenhocphantemp=line.mid(1);
+            QString tenhocphantemp=line.mid(1).trimmed();
             tenhocphan.push_back(tenhocphantemp.toStdString());
-            if(!mothocphan.empty()){
-                danhsachhocphan.push_back(mothocphan);
-                mothocphan.clear();
-            }
+            vector <Tuvung>mothocphan;
+            danhsachhocphan.push_back(mothocphan);
         }
         else {
             QStringList parts=line.split(": ");
-            if(parts.size()==2){
+            if(parts.size()==2&&!danhsachhocphan.empty()){
                 Tuvung tumoi;
-                tumoi.tienganh=parts[0].toStdString();
-                tumoi.tiengviet=parts[1].toStdString();
-                mothocphan.push_back(tumoi);
+                tumoi.tienganh=parts[0].trimmed().toStdString();
+                tumoi.tiengviet=parts[1].trimmed().toStdString();
+                danhsachhocphan.back().push_back(tumoi);
             }
         }
     }
-    danhsachhocphan.push_back(mothocphan);
     qDebug()<<"Đọc file học phần thành công";
     file.close();
 }
@@ -658,13 +661,21 @@ void MainWindow::tailennuthocphan()
         nuthocphan.push_back(btnMoi);
         btnMoi->setText(QString::fromStdString(tenhocphan[i]));
         connect(btnMoi,&QPushButton::clicked,this, [=](){
+            int index=-1;
+            for (int k=0;k<nuthocphan.size();k++){
+                if (btnMoi==nuthocphan[k]){
+                    index=k;
+                    break;
+                }
+            }
+            if (index==-1) return;
             ui->stackedWidget->setCurrentIndex(8);
             ui->lw_du_lieu_hoc_phan->clear();
-            for (int j=0;j<danhsachhocphan[i].size();j++){
-                ui->lw_du_lieu_hoc_phan->addItem(QString::fromStdString(danhsachhocphan[i][j].tienganh)+": "+QString::fromStdString((danhsachhocphan[i][j].tiengviet)));
+            for (int j=0;j<danhsachhocphan[index].size();j++){
+                ui->lw_du_lieu_hoc_phan->addItem(QString::fromStdString(danhsachhocphan[index][j].tienganh)+": "+QString::fromStdString((danhsachhocphan[index][j].tiengviet)));
             }
-            hocphantemp=danhsachhocphan[i];
-            thutuhocphanchinhsua=i;
+            hocphantemp=danhsachhocphan[index];
+            thutuhocphanchinhsua=index;
 
         });
         QPushButton *btnXoaHP=new QPushButton(this);
